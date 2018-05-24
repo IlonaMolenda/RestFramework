@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.465 sec <<< FAILURE! - in runner.TestRunner
+Then the request code should be 100(Scenario: Get locations)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError: Incorrect Response Code expected:<100> but was:<200>
+
+Scenario: Get locations  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError: Incorrect Response Code expected:<100> but was:<200>
+

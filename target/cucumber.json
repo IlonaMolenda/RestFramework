@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Get locations",
+        "description": "",
+        "id": "city-movies-advanced;get-locations",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 865216919,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the apis are up and running for \"http://cmapi.bananaappscenter.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://cmapi.bananaappscenter.com/",
+                  "offset": 33
+                }
+              ],
+              "location": "cityMoviesSteps.theApisAreUpAndRunningFor(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177275487,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a user performs a GET request to \"api/Location/LocationDetails\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "api/Location/LocationDetails",
+                  "offset": 34
+                }
+              ],
+              "location": "cityMoviesSteps.aUserPerformsAGETRequestTo(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3839641,
+              "error_message": "java.lang.AssertionError: Incorrect Response Code expected:\u003c100\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:645)\r\n\tat controller.RestValidator.expectCode(RestValidator.java:16)\r\n\tat steps.cityMoviesSteps.theRequestCodeShouldBe(cityMoviesSteps.java:39)\r\n\tat ✽.Then the request code should be 100(city-movies.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "the request code should be 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 27
+                }
+              ],
+              "location": "cityMoviesSteps.theRequestCodeShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "City movies advanced",
+    "description": "",
+    "id": "city-movies-advanced",
+    "keyword": "Feature",
+    "uri": "city-movies.feature"
+  }
+]
